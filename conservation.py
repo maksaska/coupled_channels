@@ -2,13 +2,7 @@ from fractions import Fraction
 
 
 def projection(J):
-    result = []
-
-    for i in range(int(2*J) + 1):
-        result.append(-J + i)
-
-    return result
-
+    return [-J + x for x in range(int(2*J) + 1)]
 
 def relevant_particle(name: str):
     result = {}

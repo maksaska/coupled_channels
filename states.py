@@ -6,7 +6,7 @@ class State:
     def __init__(self, state: str):
 
         self.__state = state
-        self.__J = Fraction(int(list(state)[2]), 2)
+        self.__J = Fraction(int(list(state)[2]), 2) # L_2I2J
         self.__I = Fraction(int(list(state)[1]), 2)
         self.__L = ['S', 'P', 'D', 'F', 'G', 'H', 'I'].index(list(state)[0])
         self.__S = Fraction(1, 2)
